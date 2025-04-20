@@ -1,4 +1,5 @@
 import Dice from "@/components/Dice";
+import GameBoard from "@/components/GameBoard";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -14,6 +15,7 @@ const Game = () => {
       <h1 className="text-4xl font-bold text-center">🎲 LudoCraft 🎲</h1>
       <p className="text-xl">Rolled: {diceValue ?? "-"}</p>
       <Dice onRoll={handleDiceRoll} />
+      <GameBoard />
       <Button variant="outline">Start Game</Button>
     </div>
   );
