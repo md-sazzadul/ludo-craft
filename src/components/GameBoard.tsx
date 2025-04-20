@@ -1,19 +1,27 @@
+import Token from "./Token";
+
 const GameBoard = () => {
   return (
     <div className="grid grid-cols-3 grid-rows-3 w-[500px] h-[500px] border-4 border-black rounded overflow-hidden">
-      {/* Top-left - Green */}
-      <div className="bg-green-400 flex items-center justify-center text-white font-bold">
-        Green
+      {/* Green Base */}
+      <div className="bg-green-400 flex items-center justify-center flex-wrap gap-1">
+        <Token color="green" id={1} />
+        <Token color="green" id={2} />
+        <Token color="green" id={3} />
+        <Token color="green" id={4} />
       </div>
 
-      {/* Top-center - Home Path */}
+      {/* Center Path */}
       <div className="bg-white flex items-center justify-center border">
         Path
       </div>
 
-      {/* Top-right - Yellow */}
-      <div className="bg-yellow-400 flex items-center justify-center text-white font-bold">
-        Yellow
+      {/* Yellow Base */}
+      <div className="bg-yellow-400 flex items-center justify-center flex-wrap gap-1">
+        <Token color="yellow" id={1} />
+        <Token color="yellow" id={2} />
+        <Token color="yellow" id={3} />
+        <Token color="yellow" id={4} />
       </div>
 
       {/* Middle-left - Green Path */}
@@ -34,8 +42,11 @@ const GameBoard = () => {
       </div>
 
       {/* Bottom-left - Red */}
-      <div className="bg-red-400 flex items-center justify-center text-white font-bold">
-        Red
+      <div className="bg-red-400 flex items-center justify-center flex-wrap gap-1">
+        <Token color="red" id={1} />
+        <Token color="red" id={2} />
+        <Token color="red" id={3} />
+        <Token color="red" id={4} />
       </div>
 
       {/* Bottom-center - Path */}
@@ -44,8 +55,11 @@ const GameBoard = () => {
       </div>
 
       {/* Bottom-right - Blue */}
-      <div className="bg-blue-400 flex items-center justify-center text-white font-bold">
-        Blue
+      <div className="bg-blue-400 flex items-center justify-center flex-wrap gap-1">
+        <Token color="blue" id={1} />
+        <Token color="blue" id={2} />
+        <Token color="blue" id={3} />
+        <Token color="blue" id={4} />
       </div>
     </div>
   );
