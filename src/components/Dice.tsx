@@ -8,7 +8,14 @@ const Dice = ({ onRoll }: DiceProps) => {
     onRoll(result);
   };
 
-  return <button onClick={roll}>🎲 Roll Dice</button>;
+  return (
+    <button
+      onClick={roll}
+      className="text-2xl px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white rounded-xl shadow-lg"
+    >
+      🎲 Roll Dice
+    </button>
+  );
 };
 
 export default Dice;

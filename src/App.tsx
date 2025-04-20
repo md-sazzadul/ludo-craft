@@ -1,10 +1,12 @@
-import { Button } from "./components/ui/button";
+import { Route, Routes } from "react-router";
+import Game from "./pages/Game";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
+    <Routes>
+      <Route path="/" />
+      <Route path="/game" element={<Game />} />
+    </Routes>
   );
 }
 

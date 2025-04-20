@@ -10,11 +10,11 @@ const Game = () => {
   };
 
   return (
-    <div>
-      <h1>🎲 LudoCraft 🎲</h1>
-      <p>Rolled: {diceValue ?? "-"}</p>
+    <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-green-100">
+      <h1 className="text-4xl font-bold text-center">🎲 LudoCraft 🎲</h1>
+      <p className="text-xl">Rolled: {diceValue ?? "-"}</p>
       <Dice onRoll={handleDiceRoll} />
-      <Button>Start Game</Button>
+      <Button variant="outline">Start Game</Button>
     </div>
   );
 };
